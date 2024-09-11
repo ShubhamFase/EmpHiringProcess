@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+/* Basic Form Container */
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section {
+    display: none; /* Initially hide all sections */
+}
+
+.form-section.active {
+    display: block; /* Display the current section */
+}
+
+/* Progress Bar */
+#progressBarContainer {
+    background-color: #f3f3f3;
+    border-radius: 13px;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+#progressBar {
+    width: 0;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.8;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+}
