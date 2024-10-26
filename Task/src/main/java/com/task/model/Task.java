@@ -16,7 +16,8 @@ public class Task {
 	
     public Task() {
 		super();
-	}
+	
+    }
 
 	public Task(Long id, String task, Boolean completed) {
 		super();
